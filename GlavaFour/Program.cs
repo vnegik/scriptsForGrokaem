@@ -40,7 +40,7 @@ namespace GlavaFour
 
             return 1 + RecursiveCount(list.Skip(1));
         }
-
+         
         private static int RecursiveMax(IEnumerable<int> list)
         {
             if (!list.Any()) throw new ArgumentException(nameof(list));
