@@ -8,20 +8,28 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            var myList = new List<int> { 1, 3, 5, 7, 9 };
+            #region VipolneniePervoiGlavi
+            List<int> myList = new List<int> { 1, 3, 5, 7, 9 };
             Console.WriteLine(BinarySearch(myList, 3)); // => 1
             Console.WriteLine(BinarySearch(myList, -1)); // => null gets printed as an empty string
+            #endregion
+
+            #region VipolnenieVtoroiGlavi
+            var arr = new List<int> { 5, 3, 6, 2, 10 };
+            Console.WriteLine(string.Join(", ", SelectionSort(arr)));
+            #endregion
         }
 
+        #region ALgoritmIsPervoiGlavi
         private static int? BinarySearch(IList<int> list, int item)
         {
-            var low = 0;
-            var high = list.Count() - 1;
+            int low = 0;
+            int high = list.Count() - 1;
 
             while (low <= high)
             {
-                var mid = (low + high) / 2;
-                var guess = list[mid];
+                int mid = (low + high) / 2;
+                int guess = list[mid];
                 if (guess == item) return mid;
                 if (guess > item)
                 {
@@ -35,5 +43,37 @@ namespace ConsoleApplication
 
             return null;
         }
+        #endregion
+
+        #region ALgoritmIsVtoroiGlavi
+        private static int[] SelectionSort(List<int> arr)
+        {
+            var newArr = new int[arr.Count];
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                var smallest = FindSmallest(arr);
+                newArr[i] = arr[smallest];
+                arr.RemoveAt(smallest);
+            }
+            return newArr;
+        }
+
+        private static int FindSmallest(List<int> arr)
+        {
+            var smallest = arr[0];
+            var smallestIndex = 0;
+            for (int i = 0; i < arr.Count; i++)
+            {
+                if (arr[i] < smallest)
+                {
+                    smallest = arr[i];
+                    smallestIndex = i;
+                }
+            }
+            return smallestIndex;
+        
+        }
+        #endregion
+
     }
 }
