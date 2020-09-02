@@ -8,18 +8,21 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
+            // Бинарная сортировка
             #region VipolneniePervoiGlavi
             List<int> myList = new List<int> { 1, 3, 5, 7, 9 };
             Console.WriteLine(BinarySearch(myList, 3)); // => 1
             Console.WriteLine(BinarySearch(myList, -1)); // => null gets printed as an empty string
             #endregion
 
+            // Сортировка выбором 
             #region VipolnenieVtoroiGlavi
-            var arr = new List<int> { 5, 3, 6, 2, 10 };
+            List<int> arr = new List<int> { 5, 3, 6, 2, 10 };
             Console.WriteLine(string.Join(", ", SelectionSort(arr)));
             #endregion
         }
 
+        // Бинарная сортировка
         #region ALgoritmIsPervoiGlavi
         private static int? BinarySearch(IList<int> list, int item)
         {
@@ -45,7 +48,8 @@ namespace ConsoleApplication
         }
         #endregion
 
-        #region ALgoritmIsVtoroiGlavi
+        // сортировка выбором
+        #region ALgoritmIsVtoroiGlavi 
         private static int[] SelectionSort(List<int> arr)
         {
             var newArr = new int[arr.Count];
