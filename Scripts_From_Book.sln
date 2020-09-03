@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlavaTri", "GlavaTri\GlavaT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlavaFour", "GlavaFour\GlavaFour.csproj", "{B16DED8E-DE20-4722-BF6B-CA2D60AD4790}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlavaFiveHAshTable", "GlavaFiveHAshTable\GlavaFiveHAshTable.csproj", "{28E91A14-EED6-454E-8BAE-BF7E28B82003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlavaFIveDva", "GlavaFIveDva\GlavaFIveDva.csproj", "{42D2C40E-5521-48B4-9A18-544BD7387A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlavaSix", "GlavaSix\GlavaSix.csproj", "{9D3AF307-C0BC-4C18-8120-B36BA6A3F414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +31,17 @@ Global
 		{B16DED8E-DE20-4722-BF6B-CA2D60AD4790}.Debug|x86.Build.0 = Debug|x86
 		{B16DED8E-DE20-4722-BF6B-CA2D60AD4790}.Release|x86.ActiveCfg = Release|x86
 		{B16DED8E-DE20-4722-BF6B-CA2D60AD4790}.Release|x86.Build.0 = Release|x86
+		{28E91A14-EED6-454E-8BAE-BF7E28B82003}.Debug|x86.ActiveCfg = Debug|x86
+		{28E91A14-EED6-454E-8BAE-BF7E28B82003}.Debug|x86.Build.0 = Debug|x86
+		{28E91A14-EED6-454E-8BAE-BF7E28B82003}.Release|x86.ActiveCfg = Release|x86
+		{28E91A14-EED6-454E-8BAE-BF7E28B82003}.Release|x86.Build.0 = Release|x86
+		{42D2C40E-5521-48B4-9A18-544BD7387A9D}.Debug|x86.ActiveCfg = Debug|x86
+		{42D2C40E-5521-48B4-9A18-544BD7387A9D}.Debug|x86.Build.0 = Debug|x86
+		{42D2C40E-5521-48B4-9A18-544BD7387A9D}.Release|x86.ActiveCfg = Release|x86
+		{42D2C40E-5521-48B4-9A18-544BD7387A9D}.Release|x86.Build.0 = Release|x86
+		{9D3AF307-C0BC-4C18-8120-B36BA6A3F414}.Debug|x86.ActiveCfg = Debug|x86
+		{9D3AF307-C0BC-4C18-8120-B36BA6A3F414}.Debug|x86.Build.0 = Debug|x86
+		{9D3AF307-C0BC-4C18-8120-B36BA6A3F414}.Release|x86.ActiveCfg = Release|x86
+		{9D3AF307-C0BC-4C18-8120-B36BA6A3F414}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
